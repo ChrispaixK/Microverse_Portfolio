@@ -98,24 +98,3 @@ nav {
 .on-hold {
   display: none;
 }
-
-@media screen and (min-width: 400px) {
-  .headline {
-    display: none;
-  }
-
-  .on-hold {
-    display: block;
-    padding: 250px 0;
-    text-align: center;
-    line-height: 5px;
-  }
-
-  .on-hold h3 {
-    color: #172b4d;
-  }
-
-  .on-hold p {
-    color: #344563;
-  }
-}
