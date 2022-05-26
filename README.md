@@ -9,10 +9,6 @@
 
 - HTML & CSS
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
 
 ## Getting Started
 
@@ -21,22 +17,20 @@
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
 ### create a local folder
 
 ### open your code editor
 
 ### open your folder in your editor
 
-### clone the projecct
+### clone the project from Github
 
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Chrispaix KAZE**
 
 - GitHub: [@ChrispaixK](https://github.com/ChrispaixK)
 - Twitter: [@ChrispaixK](https://twitter.com/ChrispaixK)
