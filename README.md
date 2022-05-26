@@ -1,56 +1,41 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Microverse Portfolio
 
-> Description the project.
+> Setting up a "Microverse_Portfolio" repository. Learn and practise about Figma design to create UI,Flexbox to place elements in the page,Build a personal portfolio site and to use images and backgrounds to enhance the look of the website.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+- HTML & CSS
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**Create a file locally and clone this project**
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### create a local folder
 
-### Setup
+### open your code editor
 
-### Install
+### open your folder in your editor
 
-### Usage
+### clone the project from Github
 
-### Run tests
-
-### Deployment
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Chrispaix KAZE**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@ChrispaixK](https://github.com/ChrispaixK)
+- Twitter: [@ChrispaixK](https://twitter.com/ChrispaixK)
+- LinkedIn: [Chrispaix KAZE](https://www.linkedin.com/in/chrispaix-kaze-70445a175/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -64,9 +49,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- MicroverseInc
 
 ## 📝 License
 
