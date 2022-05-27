@@ -85,7 +85,7 @@ body {
   color: #344563;
 }
 
-.description span {
+.description h3 {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
@@ -266,7 +266,7 @@ button:active {
   color: #344563;
 }
 
-.aboutme-description span {
+.aboutme-description h3 {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
@@ -274,31 +274,30 @@ button:active {
   text-transform: uppercase;
 }
 
-.skills {
+.ul-1 {
+  list-style-type: none;
+  margin-left: -15px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.skills-title {
+.li-1_title {
+  list-style-type: none;
   margin-top: 30px;
   width: 300px;
-  margin-left: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.not-open {
-  border-bottom: 1px solid #dfe1e6;
-}
-
-.skills-title h3 {
+.li-1 h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #000;
 }
 
-.skills-items li {
+.ul-2 li {
   list-style-type: none;
   margin-bottom: 15px;
   width: 303px;
@@ -307,13 +306,14 @@ button:active {
   border-radius: 8px;
   display: flex;
   align-items: center;
+  margin-left: -25px;
+}
+
+.ul-2 li img {
   padding-left: 15px;
 }
 
-.skills-items img {
-  margin-right: 15px;
-}
-
-.skills-title i {
-  right: 0;
+.not-open {
+  border-bottom: 1px solid #dfe1e6;
+  width: 327px;
 }
