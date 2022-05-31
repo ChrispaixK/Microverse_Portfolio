@@ -243,6 +243,8 @@ button:active {
   margin-top: 64px;
   background-color: #fff;
   border-radius: 0 90px 0 0;
+  padding-bottom: 90px;
+  margin-bottom: -80px;
 }
 
 .aboutme-title {
@@ -297,6 +299,10 @@ button:active {
   color: #000;
 }
 
+.ul-2 img {
+  margin-right: 10px;
+}
+
 .ul-2 li {
   list-style-type: none;
   margin-bottom: 15px;
@@ -320,126 +326,49 @@ button:active {
 
 /* --Contact me section-- */
 
-#contact-section {
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  padding-bottom: 30px;
   background: #6070ff;
-  width: 100%;
-  padding-bottom: 7rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-bottom-left-radius: 75px;
-  border-top-right-radius: 115px;
-}
-
-#contact-form {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-#contact-section h1 {
-  text-align: center;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  
-  line-height: 52px;
-  color: #fff;
-}
-
-#contact-section h3 {
-  font-style: normal;
-  font-size: 20px;
-  text-transform: none;
-  text-align: center;
-  color: white;
-  padding: 0 1rem;
-}
-
-fieldset {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  padding: 2em;
-}
-
-#contact-section button {
-  width: 162px;
-  height: 48px;
-  padding: 12px;
-  color: #6070ff;
-  cursor: pointer;
-  margin: 18px 0;
-}
-
-.contact::before {
-  content: "";
-  position: absolute;
-  background-color: #6070ff;
-  background-image: url("./logos/contactformbackground\ shapes@2x.png");
-  background-size: contain;
+  background-image: url("img/contactback.png");
   background-position: right;
-  background-origin: content-box;
   background-repeat: no-repeat;
-  border-top-left-radius: 5rem;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.contact {
-  position: relative;
-  padding: 6.4375rem 1.5rem 1.5rem;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
+  background-size: 44%;
+  border-radius: 90px 0 0 0;
+  color: #fff;
   align-items: center;
 }
 
-.contact__title {
-  color: #fff;
-  text-align: center;
+.contact-section h2 {
+  padding-top: 110px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
 }
 
-.contact__dsc {
+.contact-section p {
   color: #ebebff;
   text-align: center;
-  margin: 0.8rem 0 2.8rem;
+  margin-top: -10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
 }
 
-.contact__container form li input {
-  width: 100%;
-  border-radius: 8px;
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  margin: 10px 0;
+.contact-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-ul input {
   height: 48px;
-  padding: 0 1rem;
-}
-
-.contact__container form li textarea {
-  width: 100%;
+  width: 327px;
+  left: 0;
+  top: 0;
   border-radius: 8px;
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  margin-top: 8px;
-  padding: 1rem;
-  resize: none;
-}
-
-.contact__container form li .btn {
-  width: 162px;
-  height: 48px;
-  padding: 12px;
-  color: #6070ff;
-  cursor: pointer;
-  margin: 18px 0;
-}
-.contact::before {
-  background-image: url("./img/contactformbackground\ shapes@2x\ \(1\).png");
-  padding: 1rem;
-  border-top-left-radius: 8rem;
 }
 
 .contact {
@@ -447,17 +376,7 @@ fieldset {
   background: #fff;
 }
 
-.contact__dsc {
-  max-width: 570px;
-}
-
-.contact__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-input {
+.input {
   margin: 1em 0;
   padding: 1rem;
   border: 1px solid #d0d9d4;
@@ -466,31 +385,31 @@ input {
 }
 
 textarea {
+  font-family: Poppins, sans-serif;
   width: 100%;
   height: 100px;
-  border: 1px solid #60c095;
+  border: 1px solid #cfd8dc;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 1rem;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #091e42;
 }
 
-.contact__container form li input,
-.contact__container form li textarea {
-  max-width: 447px;
+.textarea ::placeholder {
+  color: #b3bac5;
 }
 
-.contact__container form li:last-child {
+.contact-section button {
+  margin-top: 20px;
+  background-color: #fff;
+  border: none;
+  padding: 10px 28px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #6070ff;
+  letter-spacing: 0.03em;
   text-align: center;
-}
-.contact::before {
-  padding: 3.5rem;
-}
-
-.contact {
-  padding: 8.875rem;
-  padding-bottom: 7.9rem;
+  border-radius: 10px;
 }
