@@ -231,20 +231,38 @@
     </section>
 
   <!-- contact form section -->
-  <section class="contact-section">
-    <div class="contact-me">
-        <h3>Contact me</h3>
-        <p>If you have an application you are interested in developing, a feature that you need built or a project
-            that needs coding.I’d love to help with it </p>
-        <form action="https://formspree.io/f/xbjwwqjp" method="post">
-            <input class="input" id="name" name="name" type="text" placeholder="Enter your name"><br>
-            <input class="input" name="Email" id="email" type="email" placeholder="Enter your email"><br>
-            <textarea class="text-area" name="text-area" id="text-area" placeholder="Enter a message"></textarea>
-            <button type="submit" >Get in Touch</button>
-        </form>
-        <div class="bar"></div>
+  <section class="contact">
+    <div class="contact__container">
+      <h2 class="contact__title fw-700 fz-40 lh-52">Contact me</h2>
+      <p class="contact__dsc fw-500 fz-20 lh-28">
+        If you have an application you are interested in developing, a
+        feature that you need built or a project that needs coding. I'd love
+        to help with it
+      </p>
+      <form action="https://formspree.io/forms/mqkngpww" method="post">
+        <ul class="ul">
+          <li>
+            <input type="text" class="contact__name fw-500 fz-17 lh-20" name="contact_name"
+              placeholder="Enter your name" required maxlength="30" />
+          </li>
+          <li>
+            <input type="email" class="contact__email fw-500 fz-17 lh-20" placeholder="Enter your email"
+              name="contact_email" required />
+          </li>
+          <li>
+            <textarea class="fw-500 fz-17 lh-20" name="contact_message" placeholder="Write your message here"
+              cols="30" rows="8" maxlength="500" required></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Get It Touch" class="btn fw-500 fz-17 lh-24" />
+          </li>
+        </ul>
+
+      </form>
+      
     </div>
-</section>
+  </section>
+</div>
 </body>
 
 </html>

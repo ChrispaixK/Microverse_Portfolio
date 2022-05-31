@@ -320,74 +320,177 @@ button:active {
 
 /* --Contact me section-- */
 
-.contact-section {
-  width: 375px;
-  height: 779px;
-  background-color: #6070ff;
-  margin: 20px 0;
-  color: #fff;
-  border-radius: 90px 0 0 0;
-}
-
-.contact-me {
-  width: 327px;
+#contact-section {
+  background: #6070ff;
+  width: 100%;
+  padding-bottom: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border: 1px solid red;
-  padding: 0 24px;
+  border-bottom-left-radius: 75px;
+  border-top-right-radius: 115px;
 }
 
-.contact-me h3 {
+#contact-form {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#contact-section h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
   font-size: 40px;
-  font-weight: bold;
+  
   line-height: 52px;
-  margin-top: 100px;
-  margin-bottom: 10px;
+  color: #fff;
 }
 
-.contact-me p {
+#contact-section h3 {
+  font-style: normal;
   font-size: 20px;
-  line-height: 28px;
-  margin-top: 12px;
-  margin-bottom: 50px;
+  text-transform: none;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
 }
 
-.contact-me input {
-  width: 327px;
-  height: 48px;
-  margin-bottom: 25px;
+fieldset {
+  display: flex;
+  flex-direction: column;
   border: none;
-  border-radius: 8px;
-  padding-left: 15px;
+  padding: 2em;
 }
 
-.contact-me input::placeholder {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #b3bac5;
+#contact-section button {
+  width: 162px;
+  height: 48px;
+  padding: 12px;
+  color: #6070ff;
+  cursor: pointer;
+  margin: 18px 0;
 }
 
-.text-area {
-  border: 1px solid #cfd8dc;
-  padding: 10px 38px 15px 16px;
-  font-weight: 400;
-  width: 275px;
-  font-size: 15px;
-  line-height: 24px;
-  border-radius: 8px;
-}
-
-.contact-me textarea::placeholder {
+.contact::before {
+  content: "";
   position: absolute;
+  background-color: #6070ff;
+  background-image: url("./logos/contactformbackground\ shapes@2x.png");
+  background-size: contain;
+  background-position: right;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.contact {
+  position: relative;
+  padding: 6.4375rem 1.5rem 1.5rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__title {
+  color: #fff;
+  text-align: center;
+}
+
+.contact__dsc {
+  color: #ebebff;
+  text-align: center;
+  margin: 0.8rem 0 2.8rem;
+}
+
+.contact__container form li input {
+  width: 100%;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  margin: 10px 0;
+  height: 48px;
+  padding: 0 1rem;
+}
+
+.contact__container form li textarea {
+  width: 100%;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  margin-top: 8px;
+  padding: 1rem;
+  resize: none;
+}
+
+.contact__container form li .btn {
+  width: 162px;
+  height: 48px;
+  padding: 12px;
+  color: #6070ff;
+  cursor: pointer;
+  margin: 18px 0;
+}
+.contact::before {
+  background-image: url("./img/contactformbackground\ shapes@2x\ \(1\).png");
+  padding: 1rem;
+  border-top-left-radius: 8rem;
+}
+
+.contact {
+  padding: 6rem 8.875rem;
+  background: #fff;
+}
+
+.contact__dsc {
+  max-width: 570px;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin: 1em 0;
+  padding: 1rem;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 1rem;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #b3bac5;
+  color: #091e42;
 }
 
-.contact-me button {
-  color: red;
+.contact__container form li input,
+.contact__container form li textarea {
+  max-width: 447px;
+}
+
+.contact__container form li:last-child {
+  text-align: center;
+}
+.contact::before {
+  padding: 3.5rem;
+}
+
+.contact {
+  padding: 8.875rem;
+  padding-bottom: 7.9rem;
 }
