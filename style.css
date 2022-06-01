@@ -243,6 +243,8 @@ button:active {
   margin-top: 64px;
   background-color: #fff;
   border-radius: 0 90px 0 0;
+  padding-bottom: 90px;
+  margin-bottom: -80px;
 }
 
 .aboutme-title {
@@ -297,6 +299,10 @@ button:active {
   color: #000;
 }
 
+.ul-2 img {
+  margin-right: 10px;
+}
+
 .ul-2 li {
   list-style-type: none;
   margin-bottom: 15px;
@@ -316,4 +322,94 @@ button:active {
 .not-open {
   border-bottom: 1px solid #dfe1e6;
   width: 327px;
+}
+
+/* --Contact me section-- */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  padding-bottom: 30px;
+  background: #6070ff;
+  background-image: url("img/contactback.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 44%;
+  border-radius: 90px 0 0 0;
+  color: #fff;
+  align-items: center;
+}
+
+.contact-section h2 {
+  padding-top: 110px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+}
+
+.contact-section p {
+  color: #ebebff;
+  text-align: center;
+  margin-top: -10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.contact-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-ul input {
+  height: 48px;
+  width: 327px;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+}
+
+.contact {
+  padding: 6rem 8.875rem;
+  background: #fff;
+}
+
+.input {
+  margin: 1em 0;
+  padding: 1rem;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+textarea {
+  font-family: Poppins, sans-serif;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #cfd8dc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.textarea ::placeholder {
+  color: #b3bac5;
+}
+
+.contact-section button {
+  margin-top: 20px;
+  background-color: #fff;
+  border: none;
+  padding: 10px 28px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #6070ff;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border-radius: 10px;
 }
