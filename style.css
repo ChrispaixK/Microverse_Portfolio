@@ -46,11 +46,15 @@ body {
   color: #6070ff;
 }
 
+.nav-bar ul {
+  display: none;
+}
+
 .headline {
   height: 600px;
   margin-top: 64px;
   background-image: url(img/header-shapes\ mobile.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #fff;
   border-radius: 0 0 0 90px;
@@ -61,7 +65,7 @@ body {
 }
 
 .salutation {
-  max-width: 327px;
+  min-width: 327px;
 }
 
 .salutation h1 {
@@ -74,7 +78,7 @@ body {
 
 .description {
   height: 146px;
-  max-width: 327px;
+  min-width: 327px;
 }
 
 .description p {
@@ -115,6 +119,7 @@ body {
 /* ------------WORK SECTION----------- */
 
 .work_section {
+  padding-top: 50px;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
@@ -286,7 +291,8 @@ button:active {
 .li-1_title {
   list-style-type: none;
   margin-top: 30px;
-  width: 300px;
+  min-width: 300px;
+  margin-right: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -307,8 +313,9 @@ button:active {
   list-style-type: none;
   margin-bottom: 15px;
   width: 303px;
+  margin-right: 100px;
   height: 66.72px;
-  background-color: #f7f7f9;
+  background-color: #e5e5e5;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -319,9 +326,11 @@ button:active {
   padding-left: 15px;
 }
 
-.not-open {
-  border-bottom: 1px solid #dfe1e6;
-  width: 327px;
+.not-open p {
+  min-width: 300px;
+  margin-right: 50px;
+  height: 1px;
+  background-color: #7a869a;
 }
 
 /* --Contact me section-- */
@@ -332,10 +341,8 @@ button:active {
   padding: 0 24px;
   padding-bottom: 30px;
   background: #6070ff;
-  background-image: url("img/contactback.png");
-  background-position: right;
+  background-image: url("img/contactformbackground\ shapes@2x\ \(1\).png");
   background-repeat: no-repeat;
-  background-size: 44%;
   border-radius: 90px 0 0 0;
   color: #fff;
   align-items: center;
@@ -390,7 +397,7 @@ textarea {
   height: 100px;
   border: 1px solid #cfd8dc;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 1rem;
   font-weight: 400;
   font-size: 15px;
@@ -412,4 +419,166 @@ textarea {
   letter-spacing: 0.03em;
   text-align: center;
   border-radius: 10px;
+}
+
+.bar {
+  width: 150px;
+  height: 3px;
+  margin-top: 50px;
+  margin-bottom: -20px;
+  background: #0d151e;
+}
+
+/* ---------ADDING CSS QUERIES---------- */
+
+@media screen and (min-width: 768px) {
+  .mobile_menu {
+    display: none;
+  }
+
+  .nav-bar {
+    padding: 0 80px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .links li {
+    list-style-type: none;
+    display: flex;
+    margin-left: 25px;
+  }
+
+  .links li > a {
+    color: #172b4d;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  .headline {
+    width: auto;
+    height: 600px;
+    background-image: url("img/Header\ bg@2x.png");
+    background-size: contain;
+    background-position: center;
+  }
+
+  .headline > .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .salutation {
+    width: 650px;
+    margin-top: 80px;
+  }
+
+  .description {
+    width: 650px;
+    margin-top: -35px;
+    height: auto;
+  }
+
+  .work {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .image {
+    height: 100%;
+    width: 50%;
+  }
+
+  .image img {
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .details {
+    height: 100%;
+    margin-left: 30px;
+    width: 50%;
+  }
+
+  .details h3 {
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .work.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+  }
+
+  .about-me > .container {
+    width: 40%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .about-me > .container h2 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .ul-1 {
+    margin: 0;
+    margin-top: 50px;
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .ul-2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ul-2 li {
+    display: flex;
+    flex-direction: column;
+    width: 92px;
+    height: 90px;
+    margin: 10px;
+  }
+
+  .li-1_title {
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .not-open {
+    width: 100%;
+  }
+
+  .not-open p {
+    width: 75%;
+    height: 1px;
+    background-color: #dfe1e6;
+  }
+
+  .contact-section {
+    text-align: center;
+  }
+
+  .contact-section p {
+    width: 70%;
+  }
+
+  .bar {
+    display: none;
+  }
 }
