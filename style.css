@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -231,6 +235,8 @@ body {
 }
 
 button:hover {
+  animation-duration: 1.5s;
+  animation-name: rotate;
   box-shadow: 0 8px 16px 0 #4053fc3d;
   background-color: #6070ff;
   color: #fff;
@@ -603,3 +609,34 @@ textarea {
     display: none;
   }
 }
+
+/* --Animations */
+
+.fade_in {
+  animation-duration: 1.5s;
+  animation-name: fade_in;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  30% {
+    transform: rotate(-5deg);
+  }
+
+  80% {
+    transform: rotate(5deg);
+  }
+}
+
+/* animation ends here */
