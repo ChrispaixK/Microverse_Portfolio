@@ -603,3 +603,34 @@ textarea {
     display: none;
   }
 }
+
+/*--Animations*/
+
+.fade_in {
+  animation-duration: 1.5s;
+  animation-name: fade_in;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  
+  30% {
+    transform: rotate(-5deg);
+  }
+
+  80% {
+    transform: rotate(5deg)
+  }
+}
+
+/*animation ends here*/
