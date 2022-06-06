@@ -9,6 +9,9 @@
 
 - HTML & CSS
 
+## Live Demo
+
+[Live Demo Link](https://chrispaixk.github.io/Microverse_Portfolio/)
 
 ## Getting Started
 
