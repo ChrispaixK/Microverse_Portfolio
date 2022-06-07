@@ -114,7 +114,9 @@ body {
   list-style-type: none;
 }
 
-.social-media i {
+.social-media img {
+  width: 25px;
+  height: 25px;
   color: #505f79;
   font-size: 25px;
   margin: 5px;
@@ -308,10 +310,6 @@ button:active {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #344563;
-}
-
-.ul-2 i {
   color: #344563;
 }
 
