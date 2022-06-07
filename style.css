@@ -26,14 +26,14 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.692);
 }
 
 .logo p {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1;
-  color: #6070ff;
+  color: #4a5cff;
 }
 
 .logo a {
@@ -183,7 +183,7 @@ body {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7a869a;
+  color: #4a5cff;
   margin-left: 25px;
 }
 
@@ -217,7 +217,7 @@ body {
   line-height: 16px;
   padding: 7px 12px 1px 12px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #1d34ff;
   margin-left: 5px;
   text-align: center;
 }
@@ -280,7 +280,7 @@ button:active {
 }
 
 .aboutme-description h3 {
-  color: #7f8cff;
+  color: #1d34ff;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
