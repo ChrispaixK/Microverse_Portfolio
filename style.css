@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -93,7 +93,7 @@ body {
   color: #344563;
 }
 
-.description h3 {
+.description h2 {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
@@ -425,7 +425,7 @@ textarea {
   padding: 10px 28px;
   font-size: 17px;
   font-weight: 500;
-  color: #6070ff;
+  color: #4756de;
   letter-spacing: 0.03em;
   text-align: center;
   border-radius: 10px;
