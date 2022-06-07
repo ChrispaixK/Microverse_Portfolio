@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -26,14 +26,14 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.692);
 }
 
 .logo p {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1;
-  color: #6070ff;
+  color: #4a5cff;
 }
 
 .logo a {
@@ -41,7 +41,7 @@ body {
 }
 
 .logo span {
-  color: rgb(255, 0, 0);
+  color: #a80000;
   font-weight: 900;
 }
 
@@ -93,7 +93,7 @@ body {
   color: #344563;
 }
 
-.description h3 {
+.description h2 {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
@@ -114,7 +114,9 @@ body {
   list-style-type: none;
 }
 
-.social-media i {
+.social-media img {
+  width: 25px;
+  height: 25px;
   color: #505f79;
   font-size: 25px;
   margin: 5px;
@@ -183,7 +185,7 @@ body {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7a869a;
+  color: #4a5cff;
   margin-left: 25px;
 }
 
@@ -217,7 +219,7 @@ body {
   line-height: 16px;
   padding: 7px 12px 1px 12px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #1d34ff;
   margin-left: 5px;
   text-align: center;
 }
@@ -280,7 +282,7 @@ button:active {
 }
 
 .aboutme-description h3 {
-  color: #7f8cff;
+  color: #1d34ff;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -308,10 +310,6 @@ button:active {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #344563;
-}
-
-.ul-2 i {
   color: #344563;
 }
 
@@ -425,7 +423,7 @@ textarea {
   padding: 10px 28px;
   font-size: 17px;
   font-weight: 500;
-  color: #6070ff;
+  color: #4756de;
   letter-spacing: 0.03em;
   text-align: center;
   border-radius: 10px;
