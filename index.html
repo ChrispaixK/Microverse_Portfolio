@@ -16,23 +16,29 @@
 <body>
   <!--****Toolbar or header****-->
   <header class="header">
-    <div class="nav-bar">
-      <div class="logo">
-        <a href="#">
+    <nav class="navbar logo">
+       <a href="#">
           <p>Portfolio<span>.</span></p>
         </a>
-      </div>
-      <nav class="mobile_menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </nav>
-      <ul class="links">
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#aboutme">About me</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#aboutme" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+    </nav>
+       
+      
   </header>
   <!-- ****head line section**** -->
   <section class="headline">
@@ -302,8 +308,9 @@
         </li>
       </ul>
     </form>
-    <div class="bar"></div>
+    <div class="underline"></div>
   </section>
+  <script src="main.js"></script>
 </body>
 
 </html>
