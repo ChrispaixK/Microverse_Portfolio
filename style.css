@@ -49,23 +49,11 @@ a {
   font-weight: 900;
 }
 
-.mobile_menu > span {
-  display: block;
-  width: 20px;
-  height: 0.17em;
-  border-radius: 9999px;
-  background-color: #4a5cff;
-}
-
-.mobile_menu > span:not(:last-child) {
-  margin-bottom: 5px;
-}
-
 .nav-bar ul {
   display: none;
 }
 
-/* test start here */
+/* mobile menu start here */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -130,7 +118,7 @@ a {
   left: 0;
 }
 
-/* test ends here */
+/* mobile menu ends here */
 
 li {
   list-style-type: none;
@@ -522,10 +510,6 @@ textarea {
 /* ---------ADDING CSS QUERIES---------- */
 
 @media screen and (min-width: 768px) {
-  .mobile_menu {
-    display: none;
-  }
-
   .nav-bar {
     padding: 0 80px;
   }
@@ -535,19 +519,7 @@ textarea {
     flex-direction: row;
   }
 
-  .links li {
-    list-style-type: none;
-    display: flex;
-    margin-left: 25px;
-  }
-
-  .links li > a {
-    color: #344563;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-
-  /* testing menu start */
+  /* mobile menu start */
 
   .nav-menu {
     position: relative;
@@ -558,7 +530,7 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
     padding-top: 0;
     background-color: transparent;
   }
@@ -568,7 +540,19 @@ textarea {
     cursor: pointer;
   }
 
-  /* testing menu ends */
+  .nav-item a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    padding-right: 0;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  /* mobile menu ends */
   .headline {
     width: auto;
     height: 600px;
