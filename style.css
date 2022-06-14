@@ -32,7 +32,7 @@ body {
 .logo p {
   font-size: 18px;
   font-weight: 700;
-  letter-spacing: 1;
+  letter-spacing: 0.5px;
   color: #4a5cff;
 }
 
@@ -157,7 +157,7 @@ li {
 
 .description p {
   font-weight: 400;
-  size: 16px;
+  font-size: 16px;
   line-height: 24px;
   font-size: 16px;
   color: #344563;
