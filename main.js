@@ -138,3 +138,148 @@ window.onclick = function (event) {
     project.style.display = 'none';
   }
 };
+
+/*jsdfghdgjh */
+
+const items = [
+  {
+    id: 1,
+    name: 'Tonic ',
+    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    featuredImage: 'img/work1.png',
+    author: 'Canopy',
+    type: 'Back End Dev',
+    year: '2022',
+    tech: ['Codekit', 'GitHub', 'Javascript'],
+    liveLink: 'https://htetnaing0814.github.io/Portfolio/',
+    sourceLink: 'https://github.com/HtetNaing0814/Portfolio',
+  },
+
+  {
+
+    name: 'Multi-Post Stories',
+    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    featuredImage: 'img/work2.png',
+    author: 'Canopy',
+    type: 'Back End Dev',
+    year: '2015',
+    tech: ['html', 'css', 'Javascript'],
+    liveLink: 'https://htetnaing0814.github.io/Portfolio/',
+    sourceLink: 'https://github.com/HtetNaing0814/Portfolio',
+  },
+
+  {
+    name: 'Tonic ',
+    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    featuredImage: 'img/work3.png',
+    author: 'Canopy',
+    type: 'Back End Dev',
+    year: '2015',
+    tech: ['html', 'css', 'Javascript'],
+    liveLink: 'https://htetnaing0814.github.io/Portfolio/',
+    sourceLink: 'https://github.com/HtetNaing0814/Portfolio',
+  },
+
+  {
+    name: 'Tonic ',
+    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    featuredImage: 'img/work4.png',
+    author: 'Canopy',
+    type: 'Back End Dev',
+    year: '2015',
+    tech: ['html', 'css', 'Javascript'],
+    liveLink: 'https://htetnaing0814.github.io/Portfolio/',
+    sourceLink: 'https://github.com/HtetNaing0814/Portfolio',
+  },
+
+];
+
+for (let i = 0; i < items.length; i += 1) {
+  let li = '';
+  for (let k = 0; k < items[i].tech.length; k += 1) {
+    li += `<li>${items[i].tech[k]}</li>`;
+  }
+  if(i%2 ===1){
+    const data = document.createElement('div');
+  data.classList.add('work-items');
+  data.innerHTML = `
+         <div class="work reverse">
+            <div class="image">
+              <img src="${items[i].featuredImage}" alt=" " /> 
+            </div>
+            <div class="details">
+                    <h3>
+                    ${items[i].name}
+                    </h3>
+                <div class="w-description">
+                <h4>${items[i].author}</h4>
+                <ul>
+                  <li>${items[i].type}</li>
+                  <li>${items[i].year}</li>
+                </ul>
+                </div>
+                <div class="read-more">
+                <p>
+                 ${items[i].description}
+                </p>
+              </div>
+              <div class="tech-used">
+                 <ul>
+                    ${li}
+                  </ul>
+              </div>
+                <div class="button">
+                <button id="${items[i].id}"class="work-btn" type='button' onclick=test() >See Project</button>
+                </div>
+         </div>
+         </div>
+    `;
+
+  document.querySelector('.work_section').appendChild(data);
+  }
+
+  if(i%2 ===0){
+    const data = document.createElement('div');
+  data.classList.add('work-items');
+  data.innerHTML = `
+         <div class="work">
+            <div class="image">
+              <img src="${items[i].featuredImage}" alt=" " /> 
+            </div>
+            <div class="details">
+                    <h3>
+                    ${items[i].name}
+                    </h3>
+                <div class="w-description">
+                <h4>${items[i].author}</h4>
+                <ul>
+                  <li>${items[i].type}</li>
+                  <li>${items[i].year}</li>
+                </ul>
+                </div>
+                <div class="read-more">
+                <p>
+                 ${items[i].description}
+                </p>
+              </div>
+              <div class="tech-used">
+                 <ul>
+                    ${li}
+                  </ul>
+              </div>
+                <div class="button">
+                <button id="${items[i].id}"class="work-btn" type='button' onclick=test() >See Project</button>
+                </div>
+         </div>
+         </div>
+    `;
+
+  document.querySelector('.work_section').appendChild(data);
+  }
+  
+}
+
+
+let test = () => {
+  project.style.display = 'block';
+}
