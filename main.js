@@ -229,7 +229,7 @@ for (let i = 0; i < items.length; i += 1) {
                   </ul>
               </div>
                 <div class="button">
-                <button id="${items[i].id}"class="work-btn" type='button' onclick=test() >See Project</button>
+                <button id="${items[i].id}"class="work-btn" type='button' onclick=display() >See Project</button>
                 </div>
          </div>
          </div>
