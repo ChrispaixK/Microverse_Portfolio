@@ -122,11 +122,11 @@ window.localStorage.setItem('myWork', JSON.stringify(myWork));
 const project = document.getElementById('project');
 const btns = document.getElementsByClassName('work-btn');
 const close = document.getElementsByClassName('close')[0];
-
+const display = () => {
+  project.style.display = 'block';
+};
 for (let i = 0; i < btns.length; i += 1) {
-  btns[i].onclick = function () {
-    project.style.display = 'block';
-  };
+  btns[i].onclick = display;
 }
 
 close.onclick = function () {
@@ -268,7 +268,7 @@ for (let i = 0; i < items.length; i += 1) {
                   </ul>
               </div>
                 <div class="button">
-                <button id="${items[i].id}"class="work-btn" type='button' onclick=test() >See Project</button>
+                <button id="${items[i].id}"class="work-btn" type='button' onclick=display() >See Project</button>
                 </div>
          </div>
          </div>
