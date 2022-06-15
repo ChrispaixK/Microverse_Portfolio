@@ -139,7 +139,7 @@ window.onclick = function (event) {
   }
 };
 
-/*jsdfghdgjh */
+/* jsdfghdgjh */
 
 const items = [
   {
@@ -199,10 +199,10 @@ for (let i = 0; i < items.length; i += 1) {
   for (let k = 0; k < items[i].tech.length; k += 1) {
     li += `<li>${items[i].tech[k]}</li>`;
   }
-  if(i%2 ===1){
+  if (i % 2 === 1) {
     const data = document.createElement('div');
-  data.classList.add('work-items');
-  data.innerHTML = `
+    data.classList.add('work-items');
+    data.innerHTML = `
          <div class="work reverse">
             <div class="image">
               <img src="${items[i].featuredImage}" alt=" " /> 
@@ -235,13 +235,13 @@ for (let i = 0; i < items.length; i += 1) {
          </div>
     `;
 
-  document.querySelector('.work_section').appendChild(data);
+    document.querySelector('.work_section').appendChild(data);
   }
 
-  if(i%2 ===0){
+  if (i % 2 === 0) {
     const data = document.createElement('div');
-  data.classList.add('work-items');
-  data.innerHTML = `
+    data.classList.add('work-items');
+    data.innerHTML = `
          <div class="work">
             <div class="image">
               <img src="${items[i].featuredImage}" alt=" " /> 
@@ -274,12 +274,6 @@ for (let i = 0; i < items.length; i += 1) {
          </div>
     `;
 
-  document.querySelector('.work_section').appendChild(data);
+    document.querySelector('.work_section').appendChild(data);
   }
-  
-}
-
-
-let test = () => {
-  project.style.display = 'block';
 }
