@@ -386,6 +386,15 @@ button:active {
   padding: 5px 10px 5px 0;
 }
 
+.w-img img {
+  width: 100%;
+}
+
+.w-link img {
+  margin-left: 5px;
+  margin-bottom: -5px;
+}
+
 .ul-2 li {
   list-style-type: none;
   margin-bottom: 15px;
@@ -693,27 +702,27 @@ textarea {
   .bar {
     display: none;
   }
-   /* pop up in wide screens styles start here */
- .w-more {
-  display: flex;
-  flex-direction: row;
-}
 
-.w-left {
-  max-width: 60%;
-}
+  /* pop up in wide screens styles start here */
+  .w-more {
+    display: flex;
+    flex-direction: row;
+  }
 
-.w-right {
-  margin-left: 30px;
-}
+  .w-left {
+    max-width: 60%;
+  }
 
-.headlinepopup {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: #091e42;
-}
+  .w-right {
+    margin-left: 30px;
+  }
 
+  .headlinepopup {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
 }
 
 /* --Animations */
@@ -748,7 +757,7 @@ textarea {
 /* animation ends here */
 
 /* popup start */
- 
+
 .project {
   display: none;
   position: fixed;
@@ -759,84 +768,80 @@ textarea {
   height: 100%;
   overflow: auto;
   background-color: #34456363;
- }
-  
- .detail {
+}
+
+.detail {
   background-color: #fefefe;
   margin: 5% auto;
   padding: 20px;
   border-radius: 15px;
   width: 80%;
- }
-  
- .headlinepopup {
+}
+
+.headlinepopup {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
   margin-bottom: -40px;
- }
-  
- .detail .btn-container {
+}
+
+.detail .btn-container {
   display: flex;
   justify-content: space-between;
   width: 300px;
- }
-  
- .detail .btn {
+}
+
+.detail .btn {
   display: flex;
   align-items: center;
   padding: 0 10px 0 10px;
- }
-  
- .detail .text {
+}
+
+.detail .text {
   text-align: start;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0;
- }
-  
- .mobileX {
+}
+
+.mobileX {
   position: absolute;
   top: 17px;
   right: 6px;
   z-index: 2;
- }
-  
- .close {
+}
+
+.close {
   float: right;
- }
-  
- .close:hover,
- .close:focus {
+}
+
+.close:hover,
+.close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
- }
-  
- .w-more p {
+}
+
+.w-more p {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: #344563;
- }
-  
- .w-more {
+}
+
+.w-more {
   flex-direction: row;
- }
-  
- .w-img img {
-  width: 100%;
- }
-  
- .w-tech-used ul {
+}
+
+.w-tech-used ul {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
- }
-  
- .w-tech-used li {
+}
+
+.w-tech-used li {
   list-style-type: none;
   height: 24px;
   border-radius: 8px;
@@ -849,15 +854,15 @@ textarea {
   color: #1d34ff;
   margin-left: 5px;
   margin-bottom: 15px;
- }
-  
- .w-link {
+}
+
+.w-link {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
- }
-  
- .w-link a {
+}
+
+.w-link a {
   padding: 8px 15px;
   margin-right: 5px;
   border: 1.5px solid #1d34ff;
@@ -866,12 +871,6 @@ textarea {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
- }
-  
- .w-link img {
-  margin-left: 5px;
-  margin-bottom: -5px;
- }
-  
- /* popup-end */
- 
+}
+
+/* popup-end */
