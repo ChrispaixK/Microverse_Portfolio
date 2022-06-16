@@ -139,7 +139,7 @@ window.onclick = function (event) {
   }
 };
 
-/* jsdfghdgjh */
+/* inject work section data dynamically start */
 
 const items = [
   {
@@ -277,3 +277,53 @@ for (let i = 0; i < items.length; i += 1) {
     document.querySelector('.work_section').appendChild(data);
   }
 }
+
+/* contact form validation start */
+
+const getform = document.querySelector('.contact-section');
+// const nameget = document.querySelector('#name');
+const email = document.querySelector('#email');
+// const messageValue = document.querySelector('#message');
+const btnmessage = document.querySelector('#button');
+const form = document.getElementById('form');
+
+const setError = (element, message) => {
+  const inputBox = element.parentElement;
+  const errorShow = inputBox.querySelector('.error');
+  errorShow.innerText = message;
+  inputBox.classList.add('error');
+  inputBox.classList.remove('success');
+};
+
+const setSuccess = (element) => {
+  const inputBox = element.parentElement;
+  const errorShow = inputBox.querySelector('.error');
+  errorShow.innerText = 'Submitted successfully';
+  inputBox.classList.add('success');
+  inputBox.classList.remove('error');
+};
+
+const isMailValid = (email) => {
+  const regX = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+  return (regX.test(String(email)));
+};
+
+const validateForm = () => {
+  const emailValue = email.value.trim();
+
+  if (emailValue === '') {
+    setError(btnmessage, 'Not sent! The email field is empty');
+  } else if (!isMailValid(emailValue)) {
+    setError(btnmessage, 'Not sent! Invalid email address');
+    return 0;
+  } else {
+    setSuccess(btnmessage);
+    return form.submit();
+  }
+  return 0;
+};
+
+getform.addEventListener('submit', (action) => {
+  action.preventDefault();
+  validateForm();
+});
