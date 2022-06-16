@@ -218,19 +218,20 @@
     <form action="https://formspree.io/f/xeqndwyy" id="form" method="post">
 
       <div class="contact-form">
-        <input id="name" type="text" class="input" name="name" maxlength="30" placeholder="Enter your name" /><br>
-        <span class="error"></span>
+        <input id="name" type="text" class="input" name="name" maxlength="30" placeholder="Enter your name" required />
       </div>
       <div class="contact-form">
-        <input id="email" type="email" class="input" name="email" maxlength="30" placeholder="Enter your email" /><br>
-        <span class="error"></span>
+        <input id="email" type="email" class="input" name="email" maxlength="30" placeholder="Enter your email" />
       </div>
       <div class="contact-form">
-        <textarea class="text-area" id="message" name="message" maxlength="500"
-          placeholder="Write your message here"></textarea><br>
+        <textarea class="text-area" id="message" name="message" maxlength="500" placeholder="Write your message here"
+          required></textarea>
+      </div>
+      <div class="contact-form">
+        <button id="button" type="submit">Get in Touch</button><br>
         <span class="error"></span>
       </div>
-      <button type="submit">Get in Touch</button>
+
     </form>
     <div class="underline"></div>
   </section>

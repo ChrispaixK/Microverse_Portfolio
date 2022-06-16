@@ -281,9 +281,11 @@ for (let i = 0; i < items.length; i += 1) {
 /* contact form validation start */
 
 const getform = document.querySelector('.contact-section');
-const nameget = document.querySelector('#name');
+// const nameget = document.querySelector('#name');
 const email = document.querySelector('#email');
-const messageValue = document.querySelector('#message');
+// const messageValue = document.querySelector('#message');
+const btnmessage = document.querySelector('#button');
+const form = document.getElementById('form');
 
 const setError = (element, message) => {
   const inputBox = element.parentElement;
@@ -296,7 +298,7 @@ const setError = (element, message) => {
 const setSuccess = (element) => {
   const inputBox = element.parentElement;
   const errorShow = inputBox.querySelector('.error');
-  errorShow.innerText = 'correct';
+  errorShow.innerText = 'Submitted successfully';
   inputBox.classList.add('success');
   inputBox.classList.remove('error');
 };
@@ -307,29 +309,15 @@ const isMailValid = (email) => {
 };
 
 const validateForm = () => {
-  const namegets = nameget.value.trim();
   const emailValue = email.value.trim();
-  const messageValues = messageValue.value.trim();
-  const form = document.querySelector('#form');
-  if (namegets === '') {
-    setError(nameget, 'The namefield is empty');
-  } else {
-    setSuccess(nameget);
-  }
 
   if (emailValue === '') {
-    setError(email, 'The emailfield is empty');
+    setError(btnmessage, 'Not sent! The email field is empty');
   } else if (!isMailValid(emailValue)) {
-    setError(email, 'Invalid email address');
+    setError(btnmessage, 'Not sent! Invalid email address');
     return 0;
   } else {
-    setSuccess(email);
-  }
-
-  if (messageValues === '') {
-    setError(messageValue, 'Please write your message');
-  } else {
-    setSuccess(messageValue);
+    setSuccess(btnmessage);
     return form.submit();
   }
   return 0;
