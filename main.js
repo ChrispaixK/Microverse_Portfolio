@@ -139,7 +139,7 @@ window.onclick = function (event) {
   }
 };
 
-/* jsdfghdgjh */
+/* inject work section data dynamically start */
 
 const items = [
   {
@@ -277,3 +277,64 @@ for (let i = 0; i < items.length; i += 1) {
     document.querySelector('.work_section').appendChild(data);
   }
 }
+
+/* contact form validation start */
+
+const getform = document.querySelector('.contact-section');
+const nameget = document.querySelector('#name');
+const email = document.querySelector('#email');
+const messageValue = document.querySelector('#message');
+
+const setError = (element, message) => {
+  const inputBox = element.parentElement;
+  const errorShow = inputBox.querySelector('.error');
+  errorShow.innerText = message;
+  inputBox.classList.add('error');
+  inputBox.classList.remove('success');
+};
+
+const setSuccess = (element) => {
+  const inputBox = element.parentElement;
+  const errorShow = inputBox.querySelector('.error');
+  errorShow.innerText = 'correct';
+  inputBox.classList.add('success');
+  inputBox.classList.remove('error');
+};
+
+const isMailValid = (email) => {
+  const regX = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+  return regX.test(String(email).toLowerCase());
+};
+
+const validateForm = () => {
+  const namegets = nameget.value.trim();
+  const emailValue = email.value.trim();
+  const messageValues = messageValue.value.trim();
+  const form = document.querySelector('#form');
+  if (namegets === '') {
+    setError(nameget, 'The namefield is empty');
+  } else {
+    setSuccess(nameget);
+  }
+
+  if (emailValue === '') {
+    setError(email, 'The emailfield is empty');
+  } else if (!isMailValid(emailValue)) {
+    setError(email, 'Invalid email address');
+  } else {
+    setSuccess(email);
+  }
+
+  if (messageValues === '') {
+    setError(messageValue, 'Please write your message');
+  } else {
+    setSuccess(messageValue);
+    return form.submit();
+  }
+  return 0;
+};
+
+getform.addEventListener('submit', (action) => {
+  action.preventDefault();
+  validateForm();
+});
