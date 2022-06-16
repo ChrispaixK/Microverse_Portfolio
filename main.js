@@ -303,7 +303,7 @@ const setSuccess = (element) => {
 
 const isMailValid = (email) => {
   const regX = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
-  return regX.test(String(email).toLowerCase());
+  return (regX.test(String(email)));
 };
 
 const validateForm = () => {
@@ -321,6 +321,7 @@ const validateForm = () => {
     setError(email, 'The emailfield is empty');
   } else if (!isMailValid(emailValue)) {
     setError(email, 'Invalid email address');
+    return 0;
   } else {
     setSuccess(email);
   }
