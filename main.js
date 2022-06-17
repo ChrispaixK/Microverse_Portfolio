@@ -115,10 +115,6 @@ for (let i = 0; i < myWork[foundvalue].workinfo.tech.length; i += 1) {
   litech.append(li);
 }
 
-// // //lab ends
-
-window.localStorage.setItem('myWork', JSON.stringify(myWork));
-
 const project = document.getElementById('project');
 const btns = document.getElementsByClassName('work-btn');
 const close = document.getElementsByClassName('close')[0];
@@ -356,3 +352,5 @@ if (localStorage.length > 0) {
   thEmail.value = formObject.email;
   thMessage.value = formObject.message;
 }
+
+console.log(localStorage.length);
