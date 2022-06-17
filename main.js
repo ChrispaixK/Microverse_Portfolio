@@ -121,7 +121,7 @@ const close = document.getElementsByClassName('close')[0];
 const display = () => {
   project.style.display = 'block';
 };
-for (let i = 0; i < btns.length; i += 1) {
+for (i = 0; i < btns.length; i += 1) {
   btns[i].onclick = display;
 }
 
@@ -190,7 +190,7 @@ const items = [
 
 ];
 
-for (let i = 0; i < items.length; i += 1) {
+for (let i = 0; i < items.lenght; i += 1) {
   let li = '';
   for (let k = 0; k < items[i].tech.length; k += 1) {
     li += `<li>${items[i].tech[k]}</li>`;
@@ -336,7 +336,7 @@ function inputs() {
     email: thEmail.value,
     message: thMessage.value,
   };
-  localStorage.setItem('userdata', JSON.stringify(userInputs));
+  localStorage.setItem('userdata', JSON.stringify(UserInputs));
 }
 
 form.addEventListener('input', () => {
