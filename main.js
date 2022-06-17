@@ -115,10 +115,6 @@ for (let i = 0; i < myWork[foundvalue].workinfo.tech.length; i += 1) {
   litech.append(li);
 }
 
-// // //lab ends
-
-window.localStorage.setItem('myWork', JSON.stringify(myWork));
-
 const project = document.getElementById('project');
 const btns = document.getElementsByClassName('work-btn');
 const close = document.getElementsByClassName('close')[0];
@@ -327,3 +323,34 @@ getform.addEventListener('submit', (action) => {
   action.preventDefault();
   validateForm();
 });
+
+// Local storage
+
+const thName = document.getElementById('name');
+const thEmail = document.getElementById('email');
+const thMessage = document.getElementById('message');
+
+function inputs() {
+  const userInputs = {
+    name: thName.value,
+    email: thEmail.value,
+    message: thMessage.value,
+  };
+  localStorage.setItem('userdata', JSON.stringify(userInputs));
+}
+
+form.addEventListener('input', () => {
+  inputs();
+});
+
+// prefill previous data inputs
+
+if (localStorage.length > 0) {
+  const formObject = JSON.parse(localStorage.getItem('userdata'));
+
+  thName.value = formObject.name;
+  thEmail.value = formObject.email;
+  thMessage.value = formObject.message;
+}
+
+console.log(localStorage.length);
