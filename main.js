@@ -328,11 +328,11 @@ getform.addEventListener('submit', (action) => {
   validateForm();
 });
 
+// Local storage
+
 const thName = document.getElementById('name');
 const thEmail = document.getElementById('email');
 const thMessage = document.getElementById('message');
-const thBtn = document.getElementById('button');
-
 
 function inputs() {
   const userInputs = {
@@ -343,17 +343,16 @@ function inputs() {
   localStorage.setItem('userdata', JSON.stringify(userInputs));
 }
 
-form.addEventListener ('input', () => {
+form.addEventListener('input', () => {
   inputs();
-})
+});
 
-//prefill previous data inputs
+// prefill previous data inputs
 
-if(localStorage.length >0){
+if (localStorage.length > 0) {
+  const formObject = JSON.parse(localStorage.getItem('userdata'));
 
-   const formObject = JSON.parse(localStorage.getItem('userdata'));
-
-   thName.value=formObject.name;
-   thEmail.value=formObject.email;
-   thMessage.value=formObject.message;
+  thName.value = formObject.name;
+  thEmail.value = formObject.email;
+  thMessage.value = formObject.message;
 }
