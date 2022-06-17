@@ -327,3 +327,33 @@ getform.addEventListener('submit', (action) => {
   action.preventDefault();
   validateForm();
 });
+
+const thName = document.getElementById('name');
+const thEmail = document.getElementById('email');
+const thMessage = document.getElementById('message');
+const thBtn = document.getElementById('button');
+
+
+function inputs() {
+  const userInputs = {
+    name: thName.value,
+    email: thEmail.value,
+    message: thMessage.value,
+  };
+  localStorage.setItem('userdata', JSON.stringify(userInputs));
+}
+
+form.addEventListener ('input', () => {
+  inputs();
+})
+
+//prefill previous data inputs
+
+if(localStorage.length >0){
+
+   const formObject = JSON.parse(localStorage.getItem('userdata'));
+
+   thName.value=formObject.name;
+   thEmail.value=formObject.email;
+   thMessage.value=formObject.message;
+}
