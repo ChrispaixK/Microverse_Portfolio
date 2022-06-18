@@ -139,7 +139,7 @@ window.onclick = function (event) {
 
 const items = [
   {
-    id: 1,
+    id: "work 1",
     name: 'Tonic ',
     description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     featuredImage: 'img/work1.png',
@@ -152,7 +152,7 @@ const items = [
   },
 
   {
-
+    id: "work 2",
     name: 'Multi-Post Stories',
     description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     featuredImage: 'img/work2.png',
@@ -165,6 +165,7 @@ const items = [
   },
 
   {
+    id: "work 3",
     name: 'Tonic ',
     description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     featuredImage: 'img/work3.png',
@@ -177,6 +178,7 @@ const items = [
   },
 
   {
+    id: "work 4",
     name: 'Tonic ',
     description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     featuredImage: 'img/work4.png',
@@ -201,7 +203,7 @@ for (let i = 0; i < items.length; i += 1) {
     data.innerHTML = `
          <div class="work reverse">
             <div class="image">
-              <img src="${items[i].featuredImage}" alt=" " /> 
+              <img src="${items[i].featuredImage}" alt="work image" /> 
             </div>
             <div class="details">
                     <h3>
@@ -240,7 +242,7 @@ for (let i = 0; i < items.length; i += 1) {
     data.innerHTML = `
          <div class="work">
             <div class="image">
-              <img src="${items[i].featuredImage}" alt=" " /> 
+              <img src="${items[i].featuredImage}" alt="work image" /> 
             </div>
             <div class="details">
                     <h3>
